@@ -1,7 +1,6 @@
 # Magento SaleGrid Module - Cancelled order Grid
 
-
-
+# We can override the sales order, and use the UI Components. it would be seeing for filter order status based on it.
 ### Installation
 
 * `php bin/magento module:enable Magento_Salesgrid`
