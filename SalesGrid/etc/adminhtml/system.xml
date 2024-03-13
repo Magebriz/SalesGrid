@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="salesgrid" translate="label" sortOrder="400">
+            <label>Sales Grid Settings</label>
+        </tab>
+        <section id="salesgrid" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Sales</label>
+            <tab>salesgrid</tab>
+            <resource>Magento_SalesGrid::config_sales</resource>
+            <group id="general" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="hide_customer_ip" translate="label comment" type="select" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Hide Customer IP</label>
+                    <comment>Choose whether a customer IP is shown in orders, invoices, shipments, and credit memos.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>            
+        </section>       
+    </system>
+</config>
